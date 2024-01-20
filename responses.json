@@ -1,0 +1,52 @@
+{
+    "hello": "Hi there! What is your name",
+    "hi":"Hi, there! What is your name",
+    "how are you": "I'm doing well, thank you!",
+    "qp":"Question paper are available in QP section <a href='viewqp.php'>Click here</a>",
+    "default": "I'm sorry, I didn't understand. Can you please rephrase?",
+    "name":"my name is nanthan",
+    "search": {
+        
+        "my name" : "Ohh!! That's great , My name is Nanthan and Welcome to GRITUP <br> Like to have a tour <a href='#videog'><b>Click here</b></a> to watch video",
+        "name" : "Ohh!! That's great , My name is Nanthan and Welcome to GRITUP <br> Like to have a tour <a href='#videog'><b>Click here</b></a> to watch video",
+
+
+
+
+        "question paper": "You can check the question paper section <a href='viewqp.php'><b>Click here</b></a>.",
+        "Notes": "You can find the Notes in our resources section. <a href='viewnotes.php'><b>Click here</b></a>. ",
+        "E-Learning": "You can find the Video in our resources section. <a href='elearn.php'><b>Click here</b></a>. ",
+        "Video": "You can find the Video in our resources section. <a href='elearn.php'><b>Click here</b></a>. ",
+        "DCET": "You can find the DCET Contents in our resources section. <a href='viewdcet.php'><b>Click here</b></a>. ",
+        "Text book": "You can find the Text-book in our resources section. <a href='viewbook.php'><b>Click here</b></a>. ",
+        "Text books": "You can find the Text-book in our resources section. <a href='viewbook.php'><b>Click here</b></a>. ",
+        "FAQ": "<a href='viewbook.php'><b>Click here</b></a> to redirect to faq section ",
+        "connect": "You can connect to our associates <a href='viewstudent.php'><b>Click here</b></a>. ",
+        "network": "You can connect to our associates <a href='viewstudent.php'><b>Click here</b></a>. ",
+        "job": "You can find jobs in our job portal <a href='viewjob.php'><b>Click here</b></a>. ",
+        "Intership": "You can find interships in our Intership portal<a href='viewjob.php'><b>Click here</b></a>. ",
+        "1 sem ": "<a href='check.php'><b>Click here</b></a> to get 1 sem results ",
+        "2 sem ": "<a href='check.php'><b>Click here</b></a> to get 2 sem results ",
+        "3 sem ": "<a href='check.php'><b>Click here</b></a> to get 3 sem results ",
+        "4 sem ": "<a href='check.php'><b>Click here</b></a> to get 4 sem results ",
+        "5 sem ": "<a href='check.php'><b>Click here</b></a> to get 5 sem results ",
+        "6 sem ": "<a href='check.php'><b>Click here</b></a> to get 6 sem results ",
+        "CS": "<a href='check.php'><b>Click here</b></a> to get Computer Science resource results ",
+        "EC": "<a href='check.php'><b>Click here</b></a> to get electronic and communication resource results ",
+        "AT": "<a href='check.php'><b>Click here</b></a> to get Automobile resource results ",
+        "ME": "<a href='check.php'><b>Click here</b></a> to get Mehanical resource results ",
+        "Computer Science": "<a href='check.php'><b>Click here</b></a> to get Computer Science resource results ",
+        "electronic and communication": "<a href='check.php'><b>Click here</b></a> to get electronic and communication resource results ",
+        "Automobile": "<a href='check.php'><b>Click here</b></a> to get Automobile resource results ",
+        "Mehanical": "<a href='check.php'><b>Click here</b></a> to get Mehanical resource results ",
+
+
+        
+
+
+
+        "sample test": "You can find the sample tests in our resources section.",
+        "contact": "You can find our contact information on the 'Contact Us' <a href='#ab'><b>Click here</b></a>."
+          }
+    
+}

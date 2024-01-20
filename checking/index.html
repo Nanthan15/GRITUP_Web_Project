@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatBot - GRITUP</title>
+    <style>
+      .chat-container {
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+      }
+
+      .chat-container p {
+        margin: 10px 0;
+      }
+
+      .user-message {
+        background-color: #e5e5ea;
+      }
+
+      .bot-message {
+        background-color: #f1f1f4;
+      }
+
+      .chatbot-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #f1f1f4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 9999;
+      }
+
+      .chatbot-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 400px;
+        max-height: 500px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        display: none;
+        z-index: 9999;
+      }
+
+      .chat-container p {
+        margin: 10px;
+      }
+
+      .user-message {
+        background-color: #e5e5ea;
+      }
+
+      .bot-message {
+        background-color: #f1f1f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chatbot-button" onclick="toggleChatbot()">Chat</div>
+
+    <div class="chatbot-container" id="chat-container">
+      <h2>ChatBot - GRITUP</h2>
+      <div id="chat-log"></div>
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+      function toggleChatbot() {
+        var chatbotContainer = document.getElementById("chat-container");
+        if (chatbotContainer.style.display === "block") {
+          chatbotContainer.style.display = "none";
+        } else {
+          chatbotContainer.style.display = "block";
+        }
+      }
+
+      var responses = {
+        hello: "Hi there!",
+        "how are you": "I'm doing well, thank you!",
+        default: "I'm sorry, I didn't understand. Can you please rephrase?",
+      };
+
+      function sendMessage() {
+        var userMessage = document.getElementById("user-input").value.trim();
+        if (userMessage !== "") {
+          appendMessage(userMessage, "user-message");
+          document.getElementById("user-input").value = "";
+          processInput(userMessage);
+        }
+      }
+
+      function appendMessage(message, className) {
+        var chatLog = document.getElementById("chat-log");
+        var messageElement = document.createElement("p");
+        messageElement.className = className;
+        messageElement.textContent = message;
+        chatLog.appendChild(messageElement);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+
+      function processInput(userInput) {
+        userInput = userInput.toLowerCase();
+
+        // Check if the input matches any pre-defined responses
+        if (responses.hasOwnProperty(userInput)) {
+          var botResponse = responses[userInput];
+          appendMessage(botResponse, "bot-message");
+        } else {
+          var defaultResponse = responses["default"];
+          appendMessage(defaultResponse, "bot-message");
+        }
+      }
+    </script>
+  </body>
+</html>
